@@ -31,8 +31,4 @@ Http.interceptors.response.use(async response => {
 }, error => {
   return Promise.reject(error);
 });
-export default {
-  install: (app) => {
-    app.config.globalProperties.$http = Http
-  }
-};
+export default Http
