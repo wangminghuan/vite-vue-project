@@ -53,7 +53,7 @@ html文件为
           }),
           methods: {
               async getData(t) {
-                  const a = await window.$http.get(`/i${t}/info/`, {
+                  const a = await this.$http.get(`/i${t}/info/`, {
                       params: {
                           _signature: "HLIIRxARQk77xfBBg2LRhxyyCF",
                           i: t

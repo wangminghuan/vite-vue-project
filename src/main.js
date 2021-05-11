@@ -2,5 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import http from "./http"
 import router from "./router"
-window.$http = http;
-createApp(App).use(router).mount('#app')
+const app=createApp(App)
+app.use(router).mount('#app')
+app.use(http)

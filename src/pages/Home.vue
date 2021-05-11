@@ -55,7 +55,7 @@ export default {
         _signature: 'QgOLQgAAIouldHNEEOjZ7kIDi1',
         i: behot_time,
         page: 1}
-      const res = await window.$http.get(`/list/?tag=${this.tag}`,{
+      const res = await this.$http.get(`/list/?tag=${this.tag}`,{
         params:params
       })
       this.newsList = res.data;

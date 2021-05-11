@@ -16,7 +16,7 @@ export default function (tag) {
       i: behot_time,
       page: 1
     }
-    const res = await window.$http.get(`/list/?tag=${tag.value}`, {
+    const res = await this.$http.get(`/list/?tag=${tag.value}`, {
       params: params
     })
     newsList.value = res.data;

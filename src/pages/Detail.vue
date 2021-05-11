@@ -10,7 +10,7 @@ export default {
   },
   methods: {
     async getData (id) {
-      const res = await window.$http.get(`/i${id}/info/`, {
+      const res = await this.$http.get(`/i${id}/info/`, {
         params: {
           _signature: 'HLIIRxARQk77xfBBg2LRhxyyCF',
           i: id
